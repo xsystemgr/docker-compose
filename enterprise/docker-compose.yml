@@ -36,8 +36,7 @@ services:
       GRAYLOG_MONGODB_URI: "mongodb://mongodb:27017/graylog"
       # To make reporting (headless_shell) work inside a Docker container
       GRAYLOG_REPORT_DISABLE_SANDBOX: "true"
-    networks:
-      - graylog  
+     
     ports:
     - "55044:5044/tcp"   # Beats
     - "55140:5140/tcp"   # Syslog TCP
